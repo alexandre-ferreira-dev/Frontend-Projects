@@ -3,14 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro Site</title>
-</head>
-<body>
-  <h1>Ola Mundo!</h1> 
-  <hr>
-  <p>Este foi o primeiro site que criei, com um titulo, uma linha e um parágrafo.</p> 
-  <p>Vou me didicar e focar pra aprender </p>
- 
+   <!--  <link rel="shortcut icon" href="img/logo.svg" type="imag/logo.svg">-->
+
+<!-- Meta Tags de SEO -->
+
+  <title>Alexandre Ferreira – Desenvolvedor Frontend Júnior</title>
+  <meta name="description" content="Currículo de Alexandre Ferreira, Desenvolvedor Frontend Júnior com habilidades em HTML, CSS, JavaScript, Acessibilidade, Figma e Design Responsivo." >
+  <meta name="keywords" content="desenvolvedor frontend, HTML, CSS, JavaScript, currículo, portfólio, design web" >
+  <meta name="author" content="Alexandre Ferreira" >
+  <meta name="robots" content="index, follow" >
+
+  <!-- Tags Open Graph (OG) -->
+
+  <meta property="og:type" content="profile" >
+  <meta property="og:title" content="Alexandre Ferreira – Desenvolvedor Frontend Júnior" >
+  <meta property="og:description" content="Currículo de Alexandre Ferreira, Desenvolvedor Frontend Júnior com habilidades em HTML, CSS, JavaScript, Acessibilidade, Figma e Design Responsivo." >
+  <meta property="og:url" content="https://seusite.com.br/curriculo" >
+  <meta property="og:image" content="https://seusite.com.br/og-image.png" >
+  <meta property="og:image:alt" content="Currículo de Alexandre Ferreira – Desenvolvedor Frontend Júnior" >
+  <meta property="og:locale" content="pt_BR" >
+
+  <!-- Twitter Card -->
+
+  <meta name="twitter:card" content="summary_large_image" >
+  <meta name="twitter:title" content="Alexandre Ferreira – Desenvolvedor Frontend Júnior" />
+  <meta name="twitter:description" content="Currículo de Alexandre Ferreira, Desenvolvedor Frontend Júnior especializado em HTML, CSS e JavaScript." >
+  <meta name="twitter:image" content="https://seusite.com.br/og-image.png" >
   
+  <!-- Favicon (SVG inline via data URI) -->
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232e7d32'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='20' font-weight='bold' fill='white'>S</text></svg>" >
+
+    <!-- URL Canônica -->
+
+  <link rel="canonical" href="https://seusite.com.br/curriculo" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet",);
+
+    *, *::before, *::after {
+       box-sizing: border-box; margin: 0; padding: 0; 
+      }
+    
+    body {
+      font-family: "Source Sans 3", sans-serif;
+      font-size:  15px;
+      color: #1a1a1a;
+      background-color: #fff;
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 48px 60px;
+      line-height: 1.55;
+    }
+
+    .linha-topo{
+      border: none;
+      border-top: 2.5px solid #1a1a1a;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-family: "EB Garamond", serif;
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .cargo {
+      color: #2e7d32;
+      font-weight: 600;
+      font-size: 0.97rem;
+      margin: 18px;
+    }
+
+    address {
+      font-style: normal;
+      font-size: 0.95rem;
+      color: #1a1a1a;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    address a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    address a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: #2e7d32;
+      font-size: 0.97rem;
+      font-weight: 600;
+     margin-bottom: 8px;
+      margin-top: 24px;
+    }
+    
+    h3 {
+      color: #1a5fa8;
+      font-weight: 600;
+      font-size: 0.97rem;
+      margin-top: 2px;
+    }
+
+    time {
+      display: block;
+      font-size: 0.93rem;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+
+    }
+    .lista-habilidades {
+      font-size: 0.93rem;
+      color: #1a1a1a;
+      margin-top: 16px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 6px;
+    }
+
+    li {
+      font-size: 0.93rem;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+
+    p {
+      font-size: 0.93rem;
+      color: #1a1a1a;
+      margin-top: 6px;
+      margin-bottom: 18px;
+    }
+
+    article{
+      margin-bottom: 16px;
+    }
+
+    .perfis-online a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .perfis-online a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <hr class="linha-topo">
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Alexandre Ferreira</h1>
+    <p class="cargo">Desenvolvedor Frontend Júnior</p>
+    <address>
+      Rua: Do Correio, 123 <br>
+      Cidade:Porto, Portugal - 4920-032 <br>
+      <a href="tel:+351 962 662 552">(351)962 266 553</a><br>
+      <a href="mailto:seunome@exemplo.com.br">alexandrerayssa@gmail.com</a>
+  </address>
+   </header>
+
+  <main>
+
+    <!-- HABILIDADES -->
+
+    <section aria-labelledby=" habilidades-titulo">
+      <h2 id="habilidades-titulo">Habilidades</h2>
+      <p class="lista-habilidades">HTML, CSS, JavaScript, Acessibilidade, Figma para Design, Design Responsivo, Redação Técnica, Apresentação.</p>
+    </section>
+    <!-- FORMAÇÃO ACADÊMICA -->
+
+    <article>
+      <section aria-labelledby="formacao-titulo">
+        <h2 id="formacao-titulo">Formação Acadêmica</h2>
+        <h3>Nome da Instituição, Cidade - Nome do Curso</h3>
+        <time datetime="20xx/20xx">02/2014 até 10/2017</time>
+        <p>HTML & CSS  ( desenvolvimento de páginas web),<br> Python  (em formação — programação e automação)</p>
+    </article>
+    </section>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+
+      <section aria-labelledby="experiencia-titulo">
+      <h2 id="experiencia-titulo">Experiência Profissional</h2>
+      <article>
+        <h3>Sinteck Next Comércio de Sistemas Eletrónicos Ltda, SP - Auxiliar de Técnico de Manutenção </h3>
+        <time datetime="20xx/20xx">01/2018  até 11/2018   </time>
+        <Ul>
+          <li>Montagem de painéis elétricos e eletrónicos</li>
+          <li>Montagem de placas de circuito impresso</li>
+          <li>Montagem de quadros elétricos</li>
+          <p>Habilidades: Manutenção e reforma de equipamentos eletrónicos, troca de componentes e realização de testes de diagnóstico.</p>
+        </Ul>
+      </article>
+
+      <article>
+        <h3>Volkswagen do Brasil – Indústria de Veículos Automotores Ltda, São Bernardo do Campo - Montador de Equipamentos Eletrónicos</h3>
+        <time datetime="20xx/20xx">03/2011 até 10/2016   </time>
+        <Ul>
+          <li>Interpretação de desenhos técnicos e elétricos</li>
+          <li>Liderança de equipas de produção</li>
+          <li>Soldadura elétrica e por pontos</li>
+          <p>Habilidades: Montagem Final e Linha de Produção, Montagem de reforço, Soldagem elétrodo.</p>
+        </Ul>
+      </article>
+      </section>
+
+      <!-- PERFIS ONLINE -->
+
+      <section aria-labelledby="online-titulo" class="perfis-online">
+        <h2 id="online-titulo">Na Internet</h2>
+        <p>
+          <a href="https://linkedin.com/in/alexandre-ferreira-603778118" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexandre-ferreira-603778118</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/alexandre-ferreira-dev" target="_blank" rel="noopener noreferrer">github.com/alexandre-ferreira-dev</a>
+
+        </p>
+
+      </section>
+
+  </main>
+ <!-- COPYRIGHT -->
+  <footer style="text-align: center; margin-top: 40px; padding-top: 16px; border-top: 1px solid #ccc; font-size: 0.85rem; color: #777;">
+    <p>© <span id="ano"></span> Alexandre Ferreira.</p>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
 </body>
-</html>.
+</html>
