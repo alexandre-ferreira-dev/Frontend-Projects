@@ -1,11 +1,79 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial - Meu Site Simples</title>
+    <style>
+      /* Estilos simples para tornar o site bonito e responsivo. */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      nav {
+        background-color: #333;
+        padding: 1rem;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 1rem;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #ddd;
+      }
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        text-align: center;
+      }
+      .active {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegação presente em TODAS as páginas. Links para todas as páginas. -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Página Inicial</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Bem-vindo à Página Inicial!</h1>
+      <p>
+        Este é um site simples criado apenas com HTML. Ele contém 4 páginas:
+        Inicial, Projetos, Artigos e Contato.
+      </p>
+      <p>Use a barra de navegação acima para navegar entre as páginas.</p>
+      <p>
+        <strong>Detalhes do site:</strong><br />
+        - <em>Responsivo:</em> Adapta-se a telas mobile (viewport meta e flexbox
+        no nav).<br />
+        - <em>Navegação consistente:</em> Mesma barra em todas as páginas com
+        hover effects.<br />
+        - <em>Páginas estáticas:</em> Apenas HTML, sem JS ou CSS externo
+        (estilos inline).<br />
+        - <em>Idioma:</em> Português (lang="pt-BR").
+      </p>
+    </main>
+  </body>
 </html>
